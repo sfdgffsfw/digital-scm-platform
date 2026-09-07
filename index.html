@@ -1283,21 +1283,32 @@ body.locked .browser{display:none}
         <table class="report-table">
           <thead><tr><th>物料编号</th><th>物料名称</th><th>数量</th><th>单位</th><th>更新时间</th></tr></thead>
           <tbody>
-            <tr><td colspan="5" style="text-align:center;color:#9aa9a0;padding:30px">暂无BOM数据，点击「新增物料」开始</td></tr>
+            <tr><td>BOM-001</td><td>电机组件</td><td>120</td><td>件</td><td>2026-09-07 08:30</td></tr>
+            <tr><td>BOM-002</td><td>控制面板</td><td>45</td><td>套</td><td>2026-09-07 07:45</td></tr>
+            <tr><td>BOM-003</td><td>传动皮带</td><td>200</td><td>条</td><td>2026-09-06 18:20</td></tr>
+            <tr><td>BOM-004</td><td>传感器模组</td><td>80</td><td>个</td><td>2026-09-06 16:10</td></tr>
+            <tr><td>BOM-005</td><td>外壳钣金</td><td>150</td><td>件</td><td>2026-09-06 09:00</td></tr>
           </tbody>
         </table>
       </div>
 
       <div class="bom-grid">
-        <div class="bom-card">
-          <div class="ico">📦</div>
-          <div class="ttl">该区域没有BOM</div>
-          <div>点击「新建BOM」或在左侧拖入物料以创建BOM。</div>
+        <div class="bom-card" style="text-align:left;align-items:flex-start;padding:14px 16px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><div class="ico">🏭</div><div class="ttl" style="margin:0">装配区 BOM-001</div></div>
+          <div style="color:#1c2a22;line-height:1.6">
+            <div>数量：<strong>120 件</strong></div>
+            <div>状态：<span style="color:#2f7a4d">已审核</span></div>
+            <div>更新：张工 09-07 08:30</div>
+          </div>
         </div>
-        <div class="bom-card">
-          <div class="ico">🛣️</div>
-          <div class="ttl">请选择BOM</div>
-          <div>点击上方BOM列表查看详细属性配置。</div>
+        <div class="bom-card" style="text-align:left;align-items:flex-start;padding:14px 16px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"><div class="ico">🧩</div><div class="ttl" style="margin:0">BOM-001 物料明细</div></div>
+          <div style="color:#1c2a22;line-height:1.6;width:100%">
+            <div style="display:flex;justify-content:space-between"><span>电机 A</span><strong>× 1</strong></div>
+            <div style="display:flex;justify-content:space-between"><span>轴承 B</span><strong>× 2</strong></div>
+            <div style="display:flex;justify-content:space-between"><span>螺丝 C</span><strong>× 8</strong></div>
+            <div style="display:flex;justify-content:space-between"><span>密封圈 D</span><strong>× 4</strong></div>
+          </div>
         </div>
       </div>
     </section>
@@ -1921,15 +1932,27 @@ body.locked .browser{display:none}
       <div class="project-grid">
         <div class="card">
           <div class="card-head"><h3>设备利用率</h3><span class="muted" style="font-size:11px">范围：等待 + 占线</span></div>
-          <div class="card-body" style="min-height:200px;display:flex;align-items:center;justify-content:center;color:#9aa9a0;font-size:12px">
-            <div style="text-align:center"><div style="font-size:28px;margin-bottom:8px">📉</div><div>暂无设备数据</div><div style="font-size:11px;margin-top:4px">启动仿真后查看设备利用率</div></div>
+          <div class="card-body" style="padding:8px 0">
+            <div class="rank-list">
+              <div class="rk top1"><div class="no">1</div><div class="name">AGV-02 牵引车</div><div class="bar-wrap"><span class="row-bar"><i style="width:92%"></i></span></div><div class="v">92%</div></div>
+              <div class="rk top"><div class="no">2</div><div class="name">AGV-04 牵引车</div><div class="bar-wrap"><span class="row-bar"><i style="width:88%"></i></span></div><div class="v">88%</div></div>
+              <div class="rk"><div class="no">3</div><div class="name">输送机 C</div><div class="bar-wrap"><span class="row-bar"><i style="width:85%"></i></span></div><div class="v">85%</div></div>
+              <div class="rk"><div class="no">4</div><div class="name">堆垛机 A</div><div class="bar-wrap"><span class="row-bar"><i style="width:72%"></i></span></div><div class="v">72%</div></div>
+              <div class="rk"><div class="no">5</div><div class="name">机械臂 R1</div><div class="bar-wrap"><span class="row-bar"><i style="width:61%"></i></span></div><div class="v">61%</div></div>
+            </div>
           </div>
         </div>
 
         <div class="card">
           <div class="card-head"><h3>路径规划排行</h3><span class="muted" style="font-size:11px">基于累计任务数</span></div>
-          <div class="card-body" style="min-height:200px;display:flex;align-items:center;justify-content:center;color:#9aa9a0;font-size:12px">
-            <div style="text-align:center"><div style="font-size:28px;margin-bottom:8px">🛣️</div><div>暂无路径数据</div><div style="font-size:11px;margin-top:4px">启动仿真后查看路径规划</div></div>
+          <div class="card-body" style="padding:8px 0">
+            <div class="rank-list">
+              <div class="rk top1"><div class="no">1</div><div class="name">P-101 原料仓 → F01</div><div class="bar-wrap"><span class="row-bar"><i style="width:100%"></i></span></div><div class="v">428</div></div>
+              <div class="rk top"><div class="no">2</div><div class="name">P-102 原料仓 → F02</div><div class="bar-wrap"><span class="row-bar"><i style="width:95%"></i></span></div><div class="v">406</div></div>
+              <div class="rk"><div class="no">3</div><div class="name">P-103 分拣区 → F11</div><div class="bar-wrap"><span class="row-bar"><i style="width:81%"></i></span></div><div class="v">348</div></div>
+              <div class="rk"><div class="no">4</div><div class="name">P-104 分拣区 → F12</div><div class="bar-wrap"><span class="row-bar"><i style="width:64%"></i></span></div><div class="v">276</div></div>
+              <div class="rk"><div class="no">5</div><div class="name">P-105 高位库 → F04</div><div class="bar-wrap"><span class="row-bar"><i style="width:56%"></i></span></div><div class="v">240</div></div>
+            </div>
           </div>
         </div>
       </div>
